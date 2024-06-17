@@ -41,7 +41,7 @@ This project is released under the MIT License.
 
 ## Contact
 - Email: mohamadabbas393@gmail.com
-- Project Link: [[URL to your repository]](https://github.com/MohammadAbbas393/ApScraper/)
+- Project Link: [Here!](https://github.com/MohammadAbbas393/ApScraper/)
 
 ## Acknowledgements
 Thanks to the online resources and tutorials that made this script possible.
