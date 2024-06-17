@@ -1,4 +1,4 @@
-# Web Scraper for Houston Apartments
+# Web Scraper for  Apartments
 
 ## Description
 This project includes a Python script (`scraper.py`) designed to scrape data on apartment listings from various sources online, focusing on the Houston area. The data includes properties' titles, locations, and contact information, stored in JSON format (`houston_apartments_page_2.json`).
