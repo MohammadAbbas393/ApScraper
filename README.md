@@ -12,7 +12,7 @@ This project includes a Python script (`scraper.py`) designed to scrape data on 
 To run this project, follow these steps:
 1. Clone the repository:
    ```bash
-   git clone [URL to your repository]
+   git clone [URL to your repository](https://github.com/MohammadAbbas393/ApScraper)
    ```
 2. Navigate to the project directory:
    ```bash
