@@ -1,47 +1,55 @@
-# Web Scraper for  Apartments
+# ApScraper
 
-## Description
-This project includes a Python script (`scraper.py`) designed to scrape data on apartment listings from various sources online, focusing on the Houston area. The data includes properties' titles, locations, and contact information, stored in JSON format (`houston_apartments_page_2.json`).
+A Python web scraper that pulls apartment listing prices from multiple sources and exports the data to a CSV file for easy side-by-side comparison. Built to solve a personal problem finding off-campus housing.
 
 ## Features
-- Scrape apartment listings from designated websites.
-- Output data includes title, location, and contact details.
-- Data saved in an easily accessible JSON format.
 
-## Installation
-To run this project, follow these steps:
-1. Clone the repository:
-   ```bash
-   git clone (https://github.com/MohammadAbbas393/ApScraper)
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd [Directory containing the scraper]
-   ```
-3. Install the required Python packages:
-   ```bash
-   pip install requests beautifulsoup4
-   ```
+- Scrapes apartment listings from multiple websites
+- Pulls title, location, price, and contact info for each listing
+- Exports everything to a clean CSV file
+- Focused on the Houston area (easy to adapt for other cities)
 
-## Usage
-To start scraping data, run the following command in your terminal:
+## Getting Started
+
 ```bash
+# 1. Clone the repo
+git clone https://github.com/MohammadAbbas393/ApScraper
+cd ApScraper
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run the scraper
 python scraper.py
 ```
-This will execute the script and generate a JSON file containing the scraped. data.
 
-## Results
-The script outputs JSON formatted data containing details about available apartments in the Houston area. This includes the name of the apartment, its location, and a link to the listing. An example of the output can be found in `houston_apartments_page_2.json`.
+The script will run and save results to a `listings.csv` file in the project folder.
 
-## Contributing
-Contributions are welcome, and any improvements or suggestions are appreciated. Please fork the repository and submit a pull request with your changes.
+## Output
 
-## License
-This project is released under the MIT License.
+The CSV file includes the following columns:
 
-## Contact
-- Email: mohamadabbas393@gmail.com
-- Project Link: [Here!](https://github.com/MohammadAbbas393/ApScraper/)
+| Column | Description |
+|---|---|
+| title | Listing name or headline |
+| location | Address or neighborhood |
+| price | Monthly rent |
+| contact | Phone number or email if listed |
+| source | Which site the listing came from |
 
-## Acknowledgements
-Thanks to the online resources and tutorials that made this script possible.
+## Requirements
+
+- Python 3.8+
+- requests
+- BeautifulSoup4
+
+Install them with:
+
+```bash
+pip install requests beautifulsoup4
+```
+
+## Notes
+
+Web scraping depends on the structure of the target sites. If a site updates its layout, the scraper may need adjustments. Always check that scraping is allowed by the site's terms of service before running.
+
